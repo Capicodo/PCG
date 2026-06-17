@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>X710T_Single</title>
+</head>
+<body>
+    <span class="preserve-newlines">
+        File name: 00-installer-config.yaml_X710T_Single
+#
+#  This is the network config written by SYNPS.Solutions, Germany
+#
+---
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp5s0:
+      addresses:
+        - 192.168.0.10/24
+      routes:
+        - to: default
+          via: 192.168.0.1
+      nameservers:
+        addresses:
+          - 192.168.0.1
+    </span>
+</body>
+</html>
