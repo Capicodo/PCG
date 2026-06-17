@@ -8,36 +8,36 @@
 </head>
 <body>
     <span class="preserve-newlines">
-        # This is the network config written by 'subiquity'
-        network:
-        bonds:
-            bond0:
-            addresses:
-            - 192.168.0.10/24
-            interfaces:
-            - enp1s0f0np0
-            - enp1s0f1np1
-            nameservers:
-                addresses:
-                - 192.168.0.1
-                search: []
-            parameters:
-                lacp-rate: slow
-                mode: 802.3ad
-                transmit-hash-policy: layer3+4
-            routes:
-            - to: default
-                via: 192.168.0.1
-        ethernets:
-            enp1s0f0np0: {}
-            enp1s0f1np1: {}
-            enp5s0:
-            accept-ra: true
-            enp6s0:
-            accept-ra: true
-            enxdac12df843b8:
-            accept-ra: true
-        version: 2
+# This is the network config written by 'subiquity'
+network:
+bonds:
+    bond0:
+    addresses:
+    - 192.168.0.10/24
+    interfaces:
+    - enp1s0f0np0
+    - enp1s0f1np1
+    nameservers:
+        addresses:
+        - 192.168.0.1
+        search: []
+    parameters:
+        lacp-rate: slow
+        mode: 802.3ad
+        transmit-hash-policy: layer3+4
+    routes:
+    - to: default
+        via: 192.168.0.1
+ethernets:
+    enp1s0f0np0: {}
+    enp1s0f1np1: {}
+    enp5s0:
+    accept-ra: true
+    enp6s0:
+    accept-ra: true
+    enxdac12df843b8:
+    accept-ra: true
+version: 2
 
     </span>
 </body>
